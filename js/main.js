@@ -4,5 +4,5 @@ $("#slick-slider").slick({
   speed: 500,
   fade: true,
   cssEase: "linear",
-  appendDots: $(".slider-dots_container")
+  appendDots: $(".slider-container_dots")
 });
