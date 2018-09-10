@@ -9,7 +9,8 @@ nav {
   transform: translateX(-50%);
   width: 100%;
   animation: nav-animation 0.7s 0.1s ease-out both;
-  max-width: 1200px; }
+  box-shadow: 0 0.1px 6px -2px black;
+  z-index: 99; }
 
 .hamburger {
   width: 48px;
@@ -79,6 +80,22 @@ nav {
     top: -10%; }
   100% {
     top: 0%; } }
+
+.slider {
+  height: calc(100vh - 50px);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #999; }
+
+.section {
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%; }
 
 body {
   margin: 0;
