@@ -56,12 +56,8 @@
   .slider-container .slick-next:before {
     font-size: 48px; }
 
-.slick-active button,
 .slick-active h3 {
-  animation: btn-animation 0.7s ease-in 0.1s both; }
-
-.slick-active h3 {
-  animation-name: h3-animation; }
+  animation: h3-animation 0.7s ease-in 0.1s both; }
 
 .slider-container_dots .slick-dots {
   z-index: 999;
@@ -92,7 +88,7 @@
 .slider-container_dots .slick-dots li:nth-of-type(3) {
   left: 20px; }
 
-.section {
+.wrapper {
   height: 100vh;
   background-color: #fff;
   margin-top: 100vh;
@@ -105,14 +101,6 @@
     opacity: 0; }
   100% {
     top: 50px;
-    opacity: 1; } }
-
-@keyframes btn-animation {
-  0% {
-    bottom: 40px;
-    opacity: 0; }
-  100% {
-    bottom: 75px;
     opacity: 1; } }
 
 @keyframes h3-animation {
