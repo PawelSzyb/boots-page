@@ -1,0 +1,18 @@
+.tag-content {
+  display: flex;
+  padding: 75px 0;
+  width: 90%;
+  margin: 0 auto; }
+  .tag-content h1 {
+    flex-basis: 50%;
+    padding-left: 35px;
+    text-align: center;
+    align-self: center; }
+  .tag-content p {
+    flex-basis: 50%;
+    padding-right: 35px; }
+    .tag-content p span {
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
