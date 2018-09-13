@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 75px 0;
+  padding: 35px 0;
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
@@ -13,8 +13,7 @@
     align-self: center;
   }
   & p {
-    flex-basis: 45%;
-    padding-right: 35px;
+    flex-basis: 70%;
     & span {
       display: block;
       font-weight: bold;
@@ -24,10 +23,15 @@
   }
 }
 @media (min-width: 795px) {
+  .tag-content {
+    padding: 75px 0;
+  }
   .tag-content h1 {
     text-align: center;
   }
   .tag-content p {
     text-align: justify;
+    flex-basis: 45%;
+    padding-right: 35px;
   }
 }

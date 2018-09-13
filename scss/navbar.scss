@@ -8,7 +8,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  animation: nav-animation 0.7s 0.1s ease-out both;
+  animation: nav-animation 0.7s 0.3s ease-out both;
   box-shadow: 0 0.1px 6px -2px rgb(0, 0, 0);
   z-index: 99;
 }
@@ -74,20 +74,85 @@ nav {
   font-size: 1.2em;
   display: flex;
   align-items: center;
+  padding: 0 20px;
   &:hover {
     cursor: pointer;
   }
 }
 
+.cart-wrapper {
+  margin-right: 10%;
+  position: relative;
+  & .cart-content {
+    position: absolute;
+    left: -250px;
+    border-top: 1px solid #ccc;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    display: none;
+    & h2 {
+      width: 80%;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: normal;
+      margin: 0 auto 50px auto;
+      border-bottom: 1px solid #ccc;
+      & span {
+        color: #999;
+        font-size: 0.6em;
+      }
+    }
+    & .fa-times {
+      position: absolute;
+      right: 0;
+      font-size: 1.2em;
+      padding: 10px;
+      text-align: center;
+      top: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    & a {
+      display: block;
+      color: #222;
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #333;
+      background-color: lightblue;
+    }
+    & .fa-arrow-right {
+      margin-left: 10px;
+    }
+  }
+  & .show {
+    display: block;
+  }
+}
 .cart {
   text-transform: uppercase;
   display: flex;
   align-items: center;
   margin-left: 20px;
-  margin-right: 10%;
+  height: 100%;
   &:hover {
     cursor: pointer;
   }
+}
+.sign {
+  display: none;
+}
+.fa-cart-plus {
+  padding: 0 20px;
+  font-size: 1.3em;
 }
 
 @keyframes nav-animation {
@@ -96,5 +161,25 @@ nav {
   }
   100% {
     top: 0%;
+  }
+}
+
+@media (max-width: 550px) {
+  .shop-menu {
+    display: none;
+  }
+  .cart {
+    margin: 0 5% 0 0;
+  }
+  .hamburger {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 750px) {
+  .fa-cart-plus {
+    display: none;
+  }
+  .sign {
+    display: flex;
   }
 }

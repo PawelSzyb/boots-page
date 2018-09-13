@@ -47,6 +47,9 @@
   .slider-container .slick-track,
   .slider-container .slick-list {
     height: 98%; }
+  .slider-container .slick-arrow {
+    width: 40px;
+    height: 40px; }
   .slider-container .slick-next {
     right: 50px; }
   .slider-container .slick-prev {
@@ -57,7 +60,7 @@
     font-size: 48px; }
 
 .slick-active h3 {
-  animation: h3-animation 0.7s ease-in 0.1s both; }
+  animation: h3-animation 0.7s ease-in 0.3s both; }
 
 .slider-container_dots .slick-dots {
   z-index: 999;

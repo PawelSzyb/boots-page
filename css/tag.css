@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 75px 0;
+  padding: 35px 0;
   width: 90%;
   max-width: 1100px;
   margin: 0 auto; }
@@ -11,8 +11,7 @@
     padding-right: 35px;
     align-self: center; }
   .tag-content p {
-    flex-basis: 45%;
-    padding-right: 35px; }
+    flex-basis: 70%; }
     .tag-content p span {
       display: block;
       font-weight: bold;
@@ -20,7 +19,11 @@
       margin-bottom: 20px; }
 
 @media (min-width: 795px) {
+  .tag-content {
+    padding: 75px 0; }
   .tag-content h1 {
     text-align: center; }
   .tag-content p {
-    text-align: justify; } }
+    text-align: justify;
+    flex-basis: 45%;
+    padding-right: 35px; } }

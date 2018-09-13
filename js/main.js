@@ -13,4 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const currPosition = window.pageYOffset;
     slider.style.opacity = 1 - currPosition / 1000;
   };
+
+  // Show cart
+  const cartLink = document.querySelector(".cart");
+  const cartContent = document.querySelector(".cart-content");
+  const closeIcon = document.querySelector(".fa-times");
+
+  cartLink.addEventListener("click", () => {
+    cartContent.classList.toggle("show");
+  });
+  closeIcon.addEventListener("click", () => {
+    cartContent.classList.toggle("show");
+  });
 });
