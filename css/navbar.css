@@ -54,6 +54,58 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg); }
 
+#hamburger-icon:checked ~ .hamburger-menu {
+  opacity: 1;
+  left: 0; }
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s linear; }
+  .hamburger-menu .hamburger-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0; }
+    .hamburger-menu .hamburger-list .hamburger-list_item {
+      list-style: none;
+      width: 100%;
+      margin: 10px 0;
+      cursor: pointer;
+      position: relative; }
+      .hamburger-menu .hamburger-list .hamburger-list_item .hamburger-list_number {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #d50000; }
+      .hamburger-menu .hamburger-list .hamburger-list_item .hamburger-list_link {
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+        color: #222;
+        letter-spacing: 5px; }
+      .hamburger-menu .hamburger-list .hamburger-list_item .hamburger-list_link::nth-of-type(1) {
+        margin-top: 10px; }
+    .hamburger-menu .hamburger-list .hamburger-list_item:nth-of-type(1) {
+      margin-top: 50px; }
+
 .brand-logo {
   display: flex;
   justify-content: center;
@@ -154,7 +206,26 @@ nav {
     margin-left: 5%; } }
 
 @media (min-width: 750px) {
+  .hamburger-list_link {
+    color: #bbb !important;
+    transition: 0.3s linear; }
+    .hamburger-list_link:hover {
+      color: #222 !important; }
   .fa-cart-plus {
     display: none; }
   .sign {
     display: flex; } }
+
+@media (max-height: 600px) {
+  .hamburger-list_link {
+    font-size: 1.5em !important; }
+  .hamburger-list_item {
+    width: 45% !important;
+    margin-top: 20px !important; }
+  .hamburger-list_item:nth-of-type(1),
+  .hamburger-list_item:nth-of-type(2) {
+    margin-top: 60px !important; }
+  .hamburger-list {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap; } }

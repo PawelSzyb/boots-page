@@ -112,3 +112,16 @@
   100% {
     bottom: 130px;
     opacity: 1; } }
+
+@media (max-width: 550px) {
+  .slider-container_btn {
+    padding: 5px 10px !important; }
+  .slider-container h3 {
+    width: 80%;
+    margin-bottom: 0;
+    text-align: center; } }
+
+@media (max-height: 400px) {
+  .slider-container h3,
+  .slider-container_btn {
+    visibility: hidden; } }
