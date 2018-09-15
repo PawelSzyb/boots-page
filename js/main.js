@@ -15,12 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Show cart
-  const cartLink = document.querySelector(".cart");
+  const cartLink = document.querySelectorAll(".cart");
   const cartContent = document.querySelector(".cart-content");
   const closeIcon = document.querySelector(".fa-times");
 
-  cartLink.addEventListener("click", () => {
-    cartContent.classList.toggle("show");
+  cartLink.forEach(item => {
+    item.addEventListener("click", () => {
+      cartContent.classList.toggle("show");
+    });
   });
   closeIcon.addEventListener("click", () => {
     cartContent.classList.toggle("show");
