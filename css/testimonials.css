@@ -1,0 +1,22 @@
+.slider-testimonials_slides {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.slider-box {
+  background-color: #f1f1f1;
+  padding: 60px 0; }
+  .slider-box .testimonials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+#slider-testimonials {
+  width: 90%;
+  padding: 70px 90px;
+  box-sizing: border-box;
+  background-color: #ddd; }
+  #slider-testimonials .slick-dots li button:before {
+    font-size: 0.8rem; }
+  #slider-testimonials .slick-dots {
+    left: 0; }

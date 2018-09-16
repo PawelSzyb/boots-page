@@ -7,6 +7,16 @@ $("#slick-slider").slick({
   appendDots: $(".slider-container_dots")
 });
 
+// slider testimonials
+
+$("#slider-testimonials").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  cssEase: "linear",
+  appendDots: $("#slider-testimonials")
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("slick-slider");
   window.onscroll = () => {

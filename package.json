@@ -4,7 +4,7 @@
   "description": "A simple page layout",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/main.scss -o css/main.css"
+    "sass": "node-sass -w scss/ -o css/"
   },
   "author": "Paweł Szybaj",
   "license": "MIT",
