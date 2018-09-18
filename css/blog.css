@@ -1,0 +1,22 @@
+.blog-posts {
+  text-align: center; }
+  .blog-posts .blog-posts_title {
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px; }
+    .blog-posts .blog-posts_title:before {
+      position: absolute;
+      content: "";
+      width: 40%;
+      height: 1px;
+      background-color: #bbb;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%); }
+  .blog-posts .blog-posts_card {
+    width: 40%;
+    display: inline-block; }

@@ -64,17 +64,18 @@
     line-height: 1.5em;
     letter-spacing: 2px;
   }
-  & .btn-green {
-    background: transparent;
-    border: 2px solid #1aa170;
-    color: #1aa170;
-    margin-top: 20px;
-    padding: 1em 3.5em;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
+}
+
+.btn-green {
+  background: transparent;
+  border: 2px solid #1aa170;
+  color: #1aa170;
+  margin-top: 20px;
+  padding: 1em 3.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 @media (min-width: 1064px) {

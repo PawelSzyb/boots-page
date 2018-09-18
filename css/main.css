@@ -590,16 +590,17 @@ nav {
   .product-describe p {
     line-height: 1.5em;
     letter-spacing: 2px; }
-  .product-describe .btn-green {
-    background: transparent;
-    border: 2px solid #1aa170;
-    color: #1aa170;
-    margin-top: 20px;
-    padding: 1em 3.5em;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.1em; }
+
+.btn-green {
+  background: transparent;
+  border: 2px solid #1aa170;
+  color: #1aa170;
+  margin-top: 20px;
+  padding: 1em 3.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em; }
 
 @media (min-width: 1064px) {
   .slider-box .testimonials-wrapper {
@@ -610,6 +611,29 @@ nav {
   .product-describe {
     width: 40%;
     margin: 0 auto; } }
+
+.blog-posts {
+  text-align: center; }
+  .blog-posts .blog-posts_title {
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px; }
+    .blog-posts .blog-posts_title:before {
+      position: absolute;
+      content: "";
+      width: 40%;
+      height: 1px;
+      background-color: #bbb;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%); }
+  .blog-posts .blog-posts_card {
+    width: 40%;
+    display: inline-block; }
 
 body {
   margin: 0;
