@@ -1,6 +1,5 @@
 $("#slick-slider").slick({
   dots: true,
-  infinite: true,
   speed: 500,
   fade: true,
   cssEase: "linear",
@@ -11,7 +10,6 @@ $("#slick-slider").slick({
 
 $("#slider-testimonials").slick({
   dots: true,
-  infinite: true,
   speed: 500,
   cssEase: "linear",
   appendDots: $("#slider-testimonials")

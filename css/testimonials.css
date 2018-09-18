@@ -17,12 +17,26 @@
   padding: 70px 90px;
   box-sizing: border-box;
   background-color: #ddd; }
-  #slider-testimonials .slick-next::before {
-    color: #222;
-    font-size: 1.3em; }
-  #slider-testimonials .slick-prev::before {
-    color: #222;
-    font-size: 1.3em; }
+  #slider-testimonials .slick-prev {
+    width: 48px;
+    height: 48px;
+    left: 15px; }
+    #slider-testimonials .slick-prev:before {
+      font-size: 38px;
+      color: #222;
+      content: "\f359";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400; }
+  #slider-testimonials .slick-next {
+    right: 20px;
+    width: 48px;
+    height: 48px; }
+    #slider-testimonials .slick-next:before {
+      font-size: 38px;
+      color: #222;
+      content: "\f35a";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400; }
   #slider-testimonials .slick-dots li button:before {
     font-size: 0.8rem; }
   #slider-testimonials .slick-dots {
