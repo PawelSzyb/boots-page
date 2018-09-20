@@ -1,18 +1,17 @@
 .gallery {
   background-color: #eee;
-  padding: 75px 0;
-  & h2 {
+  padding: 75px 0; }
+  .gallery h2 {
     font-weight: normal;
     text-align: center;
     letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-  .gallery-header_icon {
+    text-transform: uppercase; }
+  .gallery .gallery-header_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    &:before {
+    position: relative; }
+    .gallery .gallery-header_icon:before {
       content: "";
       position: absolute;
       top: 50%;
@@ -20,20 +19,16 @@
       transform: translate(-50%, -50%);
       width: calc(6 * 24px);
       height: 2px;
-      background-color: #aaa;
-    }
-    & div {
+      background-color: #aaa; }
+    .gallery .gallery-header_icon div {
       width: 20px;
       height: 20px;
       border: 1px solid #aaa;
-      transform: rotate(45deg);
-    }
-    & div:nth-of-type(1),
-    div:nth-of-type(2) {
-      margin-right: 10px;
-    }
-  }
-}
+      transform: rotate(45deg); }
+    .gallery .gallery-header_icon div:nth-of-type(1),
+    .gallery .gallery-header_icon div:nth-of-type(2) {
+      margin-right: 10px; }
+
 .gallery-options {
   display: flex;
   flex-direction: column;
@@ -41,19 +36,16 @@
   width: 90%;
   margin: 75px auto;
   justify-content: flex-end;
-  position: relative;
-  & .gallery-options_links {
-    text-align: center;
-    & a:nth-of-type(1) {
-      margin-right: 15px;
-    }
-    & a {
+  position: relative; }
+  .gallery-options .gallery-options_links {
+    text-align: center; }
+    .gallery-options .gallery-options_links a:nth-of-type(1) {
+      margin-right: 15px; }
+    .gallery-options .gallery-options_links a {
       text-decoration: none;
       color: #000;
-      text-transform: uppercase;
-    }
-  }
-  & .gallery-options_select {
+      text-transform: uppercase; }
+  .gallery-options .gallery-options_select {
     padding: 15px;
     position: absolute;
     top: -38px;
@@ -61,76 +53,62 @@
     height: 80px;
     transition: 0.3s linear;
     z-index: 88;
-    width: 90%;
-    & .gallery-options_header {
+    width: 90%; }
+    .gallery-options .gallery-options_select .gallery-options_header {
       text-transform: uppercase;
       letter-spacing: 2px;
       border-bottom: 1px solid #111;
-      width: 100%;
-    }
-    & .gallery-options_list {
+      width: 100%; }
+    .gallery-options .gallery-options_select .gallery-options_list {
       transform: scaleY(0);
       height: 80px;
       transition: transform 0.3s linear, opacity 0.3s 0.2s linear;
       transform-origin: top;
-      opacity: 0;
-      & a {
+      opacity: 0; }
+      .gallery-options .gallery-options_select .gallery-options_list a {
         display: block;
         letter-spacing: 2px;
         text-transform: uppercase;
         padding: 5px 0;
         text-decoration: none;
-        color: #222;
-      }
-    }
-  }
-  & .gallery-options_select:hover {
+        color: #222; }
+  .gallery-options .gallery-options_select:hover {
     background-color: lightblue;
     cursor: pointer;
-    height: 180px;
-  }
-  & .gallery-options_select:hover .gallery-options_list {
+    height: 180px; }
+  .gallery-options .gallery-options_select:hover .gallery-options_list {
     background-color: lightblue;
     transform: scaleY(1);
-    opacity: 1;
-  }
-}
+    opacity: 1; }
 
 .gallery-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 15px;
-  & .gallery-card {
+  padding: 0 15px; }
+  .gallery-cards .gallery-card {
     flex-basis: 45%;
     margin-bottom: 30px;
     min-width: 320px;
     max-width: 400px;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
-    position: relative;
-    & .gallery-card_img {
-      & img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-    }
-    & .gallery-card_body {
+    position: relative; }
+    .gallery-cards .gallery-card .gallery-card_img img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .gallery-cards .gallery-card .gallery-card_body {
       padding: 20px;
-      background-color: #fff;
-      h3 {
+      background-color: #fff; }
+      .gallery-cards .gallery-card .gallery-card_body h3 {
         display: inline-block;
         letter-spacing: 2px;
         border-bottom: 1px solid lightblue;
         margin-bottom: 5px;
-        padding-bottom: 5px;
-      }
-      div {
-        text-align: right;
-      }
-    }
-
-    & .gallery-card_overlay {
+        padding-bottom: 5px; }
+      .gallery-cards .gallery-card .gallery-card_body div {
+        text-align: right; }
+    .gallery-cards .gallery-card .gallery-card_overlay {
       width: 100%;
       height: 100%;
       background: rgba(255, 255, 255, 0.9);
@@ -141,17 +119,16 @@
       transition: 0.2s linear;
       display: flex;
       justify-content: center;
-      align-items: center;
-      & a {
+      align-items: center; }
+      .gallery-cards .gallery-card .gallery-card_overlay a {
         text-transform: uppercase;
         letter-spacing: 2px;
         text-decoration: none;
         color: #000;
         font-size: 2em;
         padding: 10px;
-        position: relative;
-      }
-      & a:before {
+        position: relative; }
+      .gallery-cards .gallery-card .gallery-card_overlay a:before {
         content: "";
         position: absolute;
         width: 100%;
@@ -161,22 +138,14 @@
         bottom: 0;
         transform: scaleX(0);
         transform-origin: center;
-        transition: 0.2s linear;
-      }
-      & a:hover::before {
-        transform: scaleX(1);
-      }
-    }
-  }
-  & .gallery-card:hover .gallery-card_overlay {
-    opacity: 1;
-  }
-}
+        transition: 0.2s linear; }
+      .gallery-cards .gallery-card .gallery-card_overlay a:hover::before {
+        transform: scaleX(1); }
+  .gallery-cards .gallery-card:hover .gallery-card_overlay {
+    opacity: 1; }
+
 @media (min-width: 750px) {
   .gallery-options {
-    flex-direction: row;
-    & .gallery-options_select {
-      width: 200px;
-    }
-  }
-}
+    flex-direction: row; }
+    .gallery-options .gallery-options_select {
+      width: 200px; } }
